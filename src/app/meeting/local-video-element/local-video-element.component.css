@@ -1,0 +1,36 @@
+
+
+.local {
+    width : fit-content;
+    height: fit-content;
+    position: relative;
+    overflow: hidden;
+    margin : 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.local video {
+    width: 35vw;
+    max-height: 400px;
+}
+
+.local video.minimized {
+    width: 150px;
+}
+
+
+.example-card {
+    width:400px;
+    position: absolute;
+    left: unset;
+    transform: unset;
+    margin-left: 10px;
+    margin-top: 10px;
+    background: transparent;
+    border-width: 0px;
+    outline: 0px !important;
+    box-shadow: none !important;
+    color: white !important;
+    z-index: 99;
+}

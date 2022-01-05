@@ -1,0 +1,20 @@
+<mat-card class="example-card">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title>{{meetingDetails.creatorName}}</mat-card-title>
+      <mat-card-subtitle>{{meetingDetails.creatorEmail}}</mat-card-subtitle>
+    </mat-card-header>
+    <!-- <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu"> -->
+    <mat-card-content>
+       <div class='meetingId text-dark'>
+            Meeting Id : {{ meetingDetails.meetingId }}
+            <button mat-icon-button color="" aria-label="Example icon button with a menu icon" (click)='copyToClipBoard()'>
+                <mat-icon class='copy-icon' color='primary'>file_copy</mat-icon>
+            </button>
+       </div>
+    </mat-card-content>
+    <!-- <mat-card-actions>
+      <button mat-button>LIKE</button>
+      <button mat-button>SHARE</button>
+    </mat-card-actions> -->
+  </mat-card>

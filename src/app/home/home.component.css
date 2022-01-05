@@ -1,0 +1,25 @@
+
+.content {
+    margin-left: 20px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+h1 {
+    font-size: 40px;
+}
+
+.action-buttons {
+    display: flex;
+    align-items: center;
+}
+
+
+.action-buttons * {
+    margin: 3px;
+}
+
+#meetingId {
+    width: 300px;
+}

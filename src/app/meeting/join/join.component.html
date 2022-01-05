@@ -1,0 +1,27 @@
+<mat-card class="example-card">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title>{{joinerDetails.name || "Shiba Inu"}}</mat-card-title>
+      <mat-card-subtitle>{{joinerDetails.email || "shiba.inu@gmail.com"}}</mat-card-subtitle>
+    </mat-card-header>
+    <video #videoElement style='width: 100%; height: 180px'></video>
+    <mat-card-content>
+      <p>
+        <mat-list>
+            <mat-list-item>MeetingId : {{meetingId}}</mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item>Host Name : {{meetingDetail?.creatorName}}</mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item>started At : {{meetingDetail?.createdAt | date:"medium"}}</mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item>currently Joined Members : {{meetingDetail?.totalMembers}}</mat-list-item>
+        </mat-list>
+      </p>
+    </mat-card-content>
+    <mat-card-actions style='display:flex; justify-content: center;'>
+      <button style='width: 100%; margin-bottom : 10px' mat-raised-button color='primary' (click)='joinMeeting()'>JOIN</button>
+    </mat-card-actions>
+    <mat-card-footer>
+      <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+    </mat-card-footer>
+  </mat-card>

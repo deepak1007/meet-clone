@@ -1,0 +1,16 @@
+<!-- <h1 mat-dialog-title>Please enter these details to continue<h1> -->
+<div mat-dialog-content>
+  <p>Please enter these details to continue</p>
+  <mat-form-field appearance="fill">
+    <mat-label>Name</mat-label>
+    <input matInput [(ngModel)]="data.name">
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>Email</mat-label>
+    <input matInput [(ngModel)]="data.email">
+  </mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <!-- <button mat-button (click)="onNoClick()">No Thanks</button> -->
+  <button mat-raised-button color='primary' class='w-100' (click)='submitDetails({name: data.name, email: data.email})'>Done</button>
+</div>
